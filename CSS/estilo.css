@@ -1,0 +1,96 @@
+header, footer{
+    background-color: #df68b7;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+   margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #bd35f3;
+    padding: 0.5rem;
+    text-align: left;
+    text-align: center;
+}
+
+thead{
+    background-color: #f33564;
+    color: white;
+    font-size: 15px;
+}
+
+.fdh{
+    background-color: #db8a9f;
+    color: rgb(2, 1, 1);
+    font-size: 15px;
+}
+
+fieldest{
+    background-color: #d4234f;
+    color: white;
+    font-size: 15px;
+}
+
+body {
+    font-family: "comic sans ms", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5c6e0;
+}
+
+.PRG {
+    background-color: #67afeb;
+    color: rgb(12, 11, 11);
+    font-size: 15px;
+}
+
+.SINF {
+    background-color: #e7e184;
+    color: rgb(2, 1, 1);
+    font-size: 15px;
+}
+
+.BD {
+    background-color: #f17ea4;
+    color: rgb(2, 1, 1);
+    font-size: 15px;
+}   
+
+.LM {
+    background-color: #e994fa;
+    color: rgb(2, 1, 1);
+    font-size: 15px;
+}
+
+.DIGI {
+    background-color: #a9f3ca;
+    color: rgb(2, 1, 1);
+    font-size: 15px;
+}
+
+.PROYT  {
+    background-color: #f5b29e;
+    color: rgb(2, 1, 1);
+    font-size: 15px;
+}   
+
+.ENT {
+    background-color: #f5b29e;
+    color: rgb(2, 1, 1);
+    font-size: 15px;
+}   
+
+.SOST {
+    background-color: #ec616d;
+    color: rgb(2, 1, 1);
+    font-size: 15px;
+}   

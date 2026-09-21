@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="C:\Users\DAW-11\Documents\LMSGI\MI-PRIMERA-WEB\CSS\estilo.css">
+</head>
+<body>
+<!-- HEADER (CABECERA)-->
+    <div id="header">
+        <header>
+        <h1>Formulario de Registro</h1>
+        <h2>Menú:</h2>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    </div> 
+    <!--CONTENIDO PRINCIPAL-->
+    <main>
+        <h2>Formulario de Contacto</h2>
+        <form 
+        <fieldset>
+            <!--INFORMACIÓN PERSONAL-->
+            <legend>Información Personal</legend>
+           <p>
+                <label for="nombre">Nombre*:</label>
+             <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            </p>
+            <p>
+                <label for="apellidos">Apellidos*:</label>
+              <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" required>
+            </p>
+            <!--CONTRASEÑA-->
+            <p>
+                <label for="contraseña">Contraseña*:</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Escribe tu contraseña" required>
+            </p>
+            <!--EMAIL-->
+            <p>
+                <label for="email">Email*:</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+            </p>
+            <!--TELÉFONO-->
+            <p>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">     
+            </p>
+            <!--URL-->
+            <p>
+                <label for="web">Página Web:</label>
+                <input type="url" id="web" name="web">
+            </p> 
+            <!--BUSCADOR-->
+            <p>
+                <label for="buscador">Buscador:</label>
+                <input type="search" id="buscador" name="buscador">    
+            </p>
+            </fieldset>p>
+                <button type="submit">Enviar</button>
+        </fieldset>
+<fieldset> <!--FECHAS Y HORAS-->
+    <legend> FECHAS Y HORAS</legend>
+<!--FECHA-->
+    <p>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha">
+    </P>
+<!--HORA-->
+    <p>
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora">
+    </P>
+</fieldset>
+<!--VALORES NUMÉRICOS-->
+<fieldset>
+    <legend>VALORES NUMÉRICOS</legend>
+    <!--EDAD-->
+    <p>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" max="120">
+    </P>   
+    <!--RANGO-->
+    <p>
+        <label for="rango">Rango:</label>
+        <input type="range" id="rango" name="rango" min="0" max="100">
+    </P>
+    <!--COLOR FAVORITO-->
+    <p>
+        <label for="color">Color favorito:</label>
+        <input type="color" id="color" name="color">
+    </P>
+</fieldset>
+
+<!--OPCIONES-->
+<fieldset>
+<legend>OPCIONES</legend>
+    <!--LISTA DESPLEGABLE-->
+    <p>
+        <label for="opciones">Opciones:</label>
+        <select id="opciones" name="opciones">
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select>
+    </P>
+    <!--CHECKBOX-->
+    <p>
+        <label>Selecciona tus aficiones:</label>
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="opcion1">
+        <label for="checkbox1">Música</label>
+        <input type="checkbox" id="checkbox2" name="checkbox2" value="opcion2">
+        <label for="checkbox2">Deportes</label>
+    </P>
+    <!--RADIO BUTTONS-->
+    <p>
+        <label>Selecciona Estudios:</label>
+        <input type="radio" id="radio1" name="radios" value="opcion1">
+        <label for="radio1">DAW</label>
+        <input type="radio" id="radio2" name="radios" value="opcion2">
+        <label for="radio2">ASIR</label>
+    </P>
+</fieldset>
+
+<!--LISTAS-->
+<fieldset>
+    <legend>LISTAS</legend>
+    
+</form>   
+    </main> 
+
+    <!-- FOOTER (PIE DE PÁGINA)-->
+     <footer>
+        <p>&copy; Miriam del Hoyo</p> 
+            Contacto:
+            <a href="mailto:miriamdelhoyodaw@gmail.com">miriamdelhoyodaw@gmail.com</a>
+        </p>

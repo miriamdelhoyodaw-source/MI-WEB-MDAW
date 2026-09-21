@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+  <!-- Información del documento HTML -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Horario</title>
+
+    <!-- en esta linea se enlaza el archivo de estilo (CSS)-->
+    <link rel="stylesheet" href="C:\Users\DAW-11\Documents\LMSGI\MI-PRIMERA-WEB\CSS\estilo.css" />
+  </head>
+
+  <!--------BODY--(CUERPO)----------------------------------------------------->
+  <body>
+    <!-- HEADER (ENCABEZADO)-->
+    <header>
+      <h1>HORARIO Miriam DAW1</h1>
+      <h2>Menu:</h2>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="horario.html">Horario</a>
+        <a href="formulario.html">Formulario</a>
+      </nav>
+    </header>
+
+    <!-- MAIN (CONTENIDO)-->
+    <main>
+      <h2>Horario Semanal</h2>
+      <table>
+        <thead>
+          <!-- 1ª fila (Días de la semana) -->
+          <tr>
+            <td></td>
+
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- 2º Fila (1ª hora) -->
+          <tr>
+            <td>8:30- 9:25</td>
+
+            <td class="PRG" rowspan="2">Programación</td>
+            <td class="SINF">Sistemas Informáticos</td>
+            <td class="BD"rowspan="2">Base de Datos</td>
+            <td class="PRG" rowspan="2">Programación</td>
+            <td rowspan="2">LIBRE</td>
+          </tr>
+
+          <!-- 3º Fila (2ª hora) -->
+          <tr>
+            <td>9:25-10:20</td>
+
+            <!-- ya está cubierto por el rowspan de arriba -->
+            <td>LIBRE</td>
+            <!-- Miércoles ya está cubierto por el rowspan de arriba -->
+            <!-- Jueves ya está cubierto por el rowspan de arriba -->
+            <!-- Viernes ya está cubierto por el rowspan de arriba -->
+          </tr>
+
+          <!-- 4º Fila (3ª hora) -->
+          <tr>
+            <td>10:20-11:15</td>
+
+            <td class="PROYT">Proyecto</td>
+            <td class="BD">Base de Datos</td>
+            <td class="LM">Lenguaje de Marcas</td>
+            <td class="SINF">Sistemas Informáticos</td>
+            <td class="DIGI">Digitalización</td>
+          </tr>
+
+          <!-- 5º Fila (Recreo) -->
+          <tr>
+            <td>11:15-11:45</td>
+
+            <td colspan="5">R E C R E O</td>
+            <!-- el resto de las celdas las completa el colspan anterior -->
+          </tr>
+
+          <!-- 6º Fila (4ª hora) -->
+          <tr>
+            <td>11:45-12:40</td>
+
+            <td class="SINF">Sistemas Informáticos</td>
+            <td class="BD" rowspan="2">Base de Datos</td>
+            <td class="PRG" rowspan="2">Programación</td>
+            <td class="SINF">Sistemas Informáticos</td>
+            <td class="DIGI">Digitalización</td>
+          </tr>
+
+          <!-- 7º Fila (5ª hora) -->
+          <tr>
+            <td>12:40-13:35</td>
+
+            <td class="LM" rowspan="2">Lenguaje de Marcas</td>
+            <!-- ya está cubierto por el rowspan de arriba -->
+            <!-- ya está cubierto por el rowspan de arriba -->
+            <td class="SOST">Sostenibilidad</td>
+            <td class="ENT" rowspan="2">Entornos de desarrollo</td>
+          </tr>
+
+          <!-- 8º Fila (6ª hora) -->
+          <tr>
+            <td>13:35-14:30</td>
+
+            <!-- ya está cubierto por el rowspan de arriba -->
+            <td>LIBRE</td>
+            <td class="SINF">Sistemas Informáticos</td>
+            <td>LIBRE</td>
+            <!-- ya está cubierto por el rowspan de arriba -->
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <!-- FOOTER (PIE DE PÁGINA)-->
+    <footer>
+      <p>CIFP Virgen de Gracia</p>
+      <p>
+        Contacto:
+        <a href="mailto:miriamdelhoyodaw@gmail.com"
+          >miriamdelhoyodaw@gmail.com</a
+        >
+      </p>
+    </footer>
+    <!--------------------------------------------------------------->
+  </body>
+</html>
