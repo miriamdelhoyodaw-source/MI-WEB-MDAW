@@ -1,8 +1,9 @@
-let jugador = "piedra";
-let maquina = "papel";
-
+function jugar(jugador){
+const opciones = ["piedra", "papel", "tijera"];
+const maquina = opciones[Math.floor(Math.random() * opciones.length)];  
 let mensaje;
 
+// Operador lógico AND (&&) y OR (||)
 if (jugador === maquina) {
     mensaje = "Empate";
 }
@@ -16,3 +17,8 @@ else {
     mensaje = "Perdiste";
 }
 console.log(mensaje);
+}
+
+jugar("piedra");
+jugar("papel");
+jugar("tijera");
