@@ -1,23 +1,23 @@
+@import url("estilo.css");
+
 * {
     box-sizing: border-box;
 }
 
 :root {
     color-scheme: light;
-    --tinta: #173d39;
-    --fondo: #dcebe2;
-    --papel: #faf8ef;
-    --acento: #ed7958;
-    --menta: #a8d8c0;
-    --linea: #c4d8cd;
+    --tinta: #21121b;
+    --fondo: #f5c6e0;
+    --papel: #fff7fb;
+    --acento: #d4234f;
+    --menta: #a9f3ca;
+    --linea: #bd35f3;
 }
 
 body {
     min-height: 100vh;
     margin: 0;
-    padding: 2rem 1rem;
-    display: grid;
-    place-items: center;
+    padding: 0;
     background-color: var(--fondo);
     background-image: repeating-linear-gradient(
         135deg,
@@ -27,22 +27,23 @@ body {
         rgb(23 61 57 / 3%) 23px
     );
     color: var(--tinta);
-    font-family: "Trebuchet MS", sans-serif;
+    font-family: "comic sans ms", cursive, sans-serif;
 }
 
 main {
-    width: min(100%, 42rem);
+    width: min(100% - 2rem, 42rem);
+    margin: 2rem auto;
     padding: clamp(1.25rem, 5vw, 2.5rem);
     border: 1px solid var(--linea);
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     background: var(--papel);
-    box-shadow: 0 1.25rem 3rem rgb(23 61 57 / 14%);
+    box-shadow: 0 0.75rem 1.75rem rgb(189 53 243 / 16%);
 }
 
 h1 {
     margin: 0;
-    color: var(--tinta);
-    font-family: Georgia, serif;
+    color: #d4234f;
+    font-family: inherit;
     font-size: 2.5rem;
     line-height: 1.1;
     text-align: center;
@@ -50,7 +51,7 @@ h1 {
 
 .instrucciones {
     margin: 0.85rem 0 1.75rem;
-    color: #49645d;
+    color: #674354;
     text-align: center;
 }
 
@@ -63,9 +64,9 @@ h1 {
 .opciones button {
     min-height: 4.5rem;
     padding: 0.75rem;
-    border: 2px solid var(--tinta);
-    border-radius: 0.7rem;
-    background: var(--menta);
+    border: 1px solid var(--linea);
+    border-radius: 0.4rem;
+    background: #67afeb;
     color: var(--tinta);
     font: inherit;
     font-size: 1.1rem;
@@ -75,16 +76,16 @@ h1 {
 }
 
 .opciones button:nth-child(2) {
-    background: #f2cf7a;
+    background: #e7e184;
 }
 
 .opciones button:nth-child(3) {
-    background: #f2a188;
+    background: #f17ea4;
 }
 
 .opciones button:hover {
     transform: translateY(-2px);
-    background: #c5e5d3;
+    filter: brightness(0.94);
 }
 
 .opciones button:focus-visible {
@@ -96,8 +97,8 @@ h1 {
     margin: 1.5rem 0 0.75rem;
     padding: 0.8rem 1rem;
     border-radius: 0.55rem;
-    background: var(--tinta);
-    color: white;
+    background: #df68b7;
+    color: var(--tinta);
     font-weight: 700;
     text-align: center;
 }
@@ -109,9 +110,9 @@ h1 {
     margin: 0 0.35rem 0.7rem 0;
     padding: 0.45rem 0.65rem;
     border: 1px solid var(--linea);
-    border-radius: 999px;
+    border-radius: 0.35rem;
     background: white;
-    color: #49645d;
+    color: #674354;
     font-size: 0.9rem;
 }
 
@@ -119,13 +120,13 @@ h1 {
     margin-top: 0.75rem;
     padding: 1rem 1.2rem;
     border-left: 4px solid var(--acento);
-    border-radius: 0.35rem;
-    background: #f0eee3;
+    border-radius: 0.25rem;
+    background: #fce6f1;
 }
 
 #resultado h2 {
     margin: 0 0 0.8rem;
-    font-family: Georgia, serif;
+    font-family: inherit;
     font-size: 1.35rem;
 }
 
@@ -136,14 +137,15 @@ h1 {
 #mensaje {
     min-height: 1.5rem;
     margin-top: 0.9rem !important;
-    color: #a54c35;
+    color: #d4234f;
     font-size: 1.15rem;
     font-weight: 700;
 }
 
 @media (max-width: 420px) {
-    body {
-        padding: 1rem 0.65rem;
+    main {
+        width: min(100% - 1.25rem, 42rem);
+        margin-block: 1rem;
     }
 
     h1 {

@@ -1,25 +1,27 @@
+@import url("estilo.css");
+
 .calculadora,
 .calculadora * {
     box-sizing: border-box;
 }
 
 .calculadora {
-    --fondo: #1fdbf0;
-    --tecla: #344342;
-    --tecla-hover: #435653;
-    --acento: #f19a52;
-    --texto: #f4f3e9;
-    --pantalla: #e2e9d8;
+    --fondo: #df68b7;
+    --tecla: #f17ea4;
+    --tecla-hover: #ec616d;
+    --acento: #a9f3ca;
+    --texto: #160d12;
+    --pantalla: #fff7fb;
 
     width: min(100% - 2rem, 22rem);
     margin: 3rem auto;
     padding: 1.25rem;
-    border: 1px solid #52615b;
-    border-radius: 1rem;
+    border: 1px solid #bd35f3;
+    border-radius: 0.75rem;
     background: var(--fondo);
-    box-shadow: 0 1.25rem 3rem rgb(24 34 32 / 22%);
+    box-shadow: 0 0.75rem 1.75rem rgb(189 53 243 / 18%);
     color: var(--texto);
-    font-family: system-ui, sans-serif;
+    font-family: "comic sans ms", cursive, sans-serif;
 }
 
 .calculadora .pantalla {
@@ -50,8 +52,8 @@
 .calculadora button {
     min-width: 0;
     min-height: 3.75rem;
-    border: 1px solid #52615b;
-    border-radius: 0.55rem;
+    border: 1px solid #bd35f3;
+    border-radius: 0.4rem;
     background: var(--tecla);
     color: var(--texto);
     font: inherit;
@@ -74,18 +76,23 @@
 }
 
 .calculadora .tecla--operador {
-    color: #f5c16c;
+    background: #67afeb;
+    color: #100b12;
+}
+
+.calculadora .tecla--operador:hover {
+    background: #438fd0;
 }
 
 .calculadora .tecla--igual {
     border-color: var(--acento);
     background: var(--acento);
-    color: #241c16;
+    color: #102017;
     font-weight: 700;
 }
 
 .calculadora .tecla--igual:hover {
-    background: #ffad65;
+    background: #83d9a9;
 }
 
 .calculadora .tecla--doble {
