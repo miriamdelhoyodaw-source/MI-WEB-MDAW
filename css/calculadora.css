@@ -4,12 +4,12 @@
 }
 
 .calculadora {
-    --fondo: #202a2a;
+    --fondo: #1fdbf0;
     --tecla: #344342;
     --tecla-hover: #435653;
     --acento: #f19a52;
     --texto: #f4f3e9;
-    --pantalla: #dce9d8;
+    --pantalla: #e2e9d8;
 
     width: min(100% - 2rem, 22rem);
     margin: 3rem auto;
