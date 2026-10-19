@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="css/calculadora.css">
+        <script src="js/calculadora.js" defer></script>
+    </head>
+
+    <body>
+        <div class="calculadora">
+            <input type="text" id="pantalla" class="pantalla" value="0" readonly>
+
+            <div class="teclas">
+                <button class="tecla--operador" onclick="borrar()">C</button>
+                <button onclick="escribir('1')">1</button>
+                <button onclick="escribir('2')">2</button>
+                <button onclick="escribir('3')">3</button>
+                <button class="tecla--operador" onclick="escribir('+')">+</button>
+
+                <button onclick="escribir('4')">4</button>
+                <button onclick="escribir('5')">5</button>
+                <button onclick="escribir('6')">6</button>
+                <button class="tecla--operador" onclick="escribir('-')">-</button>
+
+                <button onclick="escribir('7')">7</button>
+                <button onclick="escribir('8')">8</button>
+                <button onclick="escribir('9')">9</button>
+                <button class="tecla--operador" onclick="escribir('/')">/</button>
+
+                <button onclick="escribir('0')">0</button>
+                <button onclick="escribir('.')">.</button>
+                <button class="tecla--igual" onclick="calcular()">=</button>
+                <button class="tecla--operador" onclick="escribir('*')">*</button>
+            </div>
+        </div>
+    </body>
+</html>

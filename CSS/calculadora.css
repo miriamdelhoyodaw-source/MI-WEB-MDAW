@@ -1,0 +1,108 @@
+.calculadora,
+.calculadora * {
+    box-sizing: border-box;
+}
+
+.calculadora {
+    --fondo: #202a2a;
+    --tecla: #344342;
+    --tecla-hover: #435653;
+    --acento: #f19a52;
+    --texto: #f4f3e9;
+    --pantalla: #dce9d8;
+
+    width: min(100% - 2rem, 22rem);
+    margin: 3rem auto;
+    padding: 1.25rem;
+    border: 1px solid #52615b;
+    border-radius: 1rem;
+    background: var(--fondo);
+    box-shadow: 0 1.25rem 3rem rgb(24 34 32 / 22%);
+    color: var(--texto);
+    font-family: system-ui, sans-serif;
+}
+
+.calculadora .pantalla {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 5.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.6rem;
+    background: var(--pantalla);
+    color: #20302b;
+    font-size: clamp(1.4rem, 6vw, 2.2rem);
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.calculadora .teclas {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.65rem;
+}
+
+.calculadora button {
+    min-width: 0;
+    min-height: 3.75rem;
+    border: 1px solid #52615b;
+    border-radius: 0.55rem;
+    background: var(--tecla);
+    color: var(--texto);
+    font: inherit;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 140ms ease, transform 140ms ease;
+}
+
+.calculadora button:hover {
+    background: var(--tecla-hover);
+}
+
+.calculadora button:active {
+    transform: translateY(1px);
+}
+
+.calculadora button:focus-visible {
+    outline: 3px solid #f5c16c;
+    outline-offset: 3px;
+}
+
+.calculadora .tecla--operador {
+    color: #f5c16c;
+}
+
+.calculadora .tecla--igual {
+    border-color: var(--acento);
+    background: var(--acento);
+    color: #241c16;
+    font-weight: 700;
+}
+
+.calculadora .tecla--igual:hover {
+    background: #ffad65;
+}
+
+.calculadora .tecla--doble {
+    grid-column: span 2;
+}
+
+@media (max-width: 360px) {
+    .calculadora {
+        margin-block: 1rem;
+        padding: 0.85rem;
+    }
+
+    .calculadora .teclas {
+        gap: 0.45rem;
+    }
+
+    .calculadora button {
+        min-height: 3.25rem;
+    }
+}

@@ -4,15 +4,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Piedra, Papel o Tijera</title>
-       <!--link rel="stylesheet" href="PiedraPapelTijera.css"-->
-       <script src="PiedraPapelTijera.js"></script>
+        <link rel="stylesheet" href="css/piedra-papel-tijera.css">
+        <script src="js/juego.js"></script>
     </head>
     <body>
     <main>
         <h1>Piedra, Papel o Tijera</h1>
-        <p> class="instructions">Elige una opción y juega contra la máquina:</p>
+        <p class="instrucciones">Elige una opción y juega contra la máquina:</p>
 
+        <div class="opciones">
+            <button onclick="juego('piedra')">Piedra</button>
+            <button onclick="juego('papel')">Papel</button>
+            <button onclick="juego('tijera')">Tijera</button>
+        </div>
+
+        <p id="marcador">Partidas jugadas: 0</p>
+        <p id="ganadas" >Partidas ganadas: 0</p>
+        <p id="empates">Partidas empatadas: 0</p>
+        <p id="perdidas">Partidas perdidas: 0</p>
         
+        <section id="resultado">
+            <h2>Resultado</h2>
+            <p id="jugada-jugador">Tu elección: </p>
+            <p id="jugada-maquina">Elección de la máquina: </p>
+            <p id="mensaje"></p>
+        </section>
     </main>
     </body>
 </html>
