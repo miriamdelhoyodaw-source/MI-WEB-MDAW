@@ -47,6 +47,14 @@ body {
     background-color: #f5c6e0;
 }
 
+.imagen-setup {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 1rem auto;
+}
+
 .PRG {
     background-color: #67afeb;
     color: rgb(12, 11, 11);
