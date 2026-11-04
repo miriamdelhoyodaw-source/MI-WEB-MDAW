@@ -1,39 +1,50 @@
 @import url("estilo.css");
 
+body {
+    background-image:
+        linear-gradient(135deg, rgb(13 27 43 / 72%), rgb(20 49 59 / 44%)),
+        url("../img/calculadora2.jpg");
+    background-position: center, center;
+    background-size: cover;
+}
+
 .calculadora,
 .calculadora * {
     box-sizing: border-box;
 }
 
 .calculadora {
-    --fondo: #df68b7;
-    --tecla: #f17ea4;
-    --tecla-hover: #ec616d;
-    --acento: #a9f3ca;
-    --texto: #160d12;
-    --pantalla: #fff7fb;
+    --fondo: rgb(12 17 48 / 84%);
+    --tecla: rgb(101 91 158 / 48%);
+    --tecla-hover: rgb(133 113 190 / 68%);
+    --texto: #f7f1ff;
+    --pantalla: rgb(4 9 34 / 86%);
 
     width: min(100% - 2rem, 22rem);
     margin: 3rem auto;
     padding: 1.25rem;
-    border: 1px solid #bd35f3;
-    border-radius: 0.75rem;
+    border: 1px solid rgb(205 179 255 / 35%);
+    border-radius: 1rem;
     background: var(--fondo);
-    box-shadow: 0 0.75rem 1.75rem rgb(189 53 243 / 18%);
+    box-shadow:
+        0 1.5rem 3.5rem rgb(3 5 24 / 50%),
+        0 0 2rem rgb(119 89 219 / 18%),
+        inset 0 1px 0 rgb(255 255 255 / 12%);
+    backdrop-filter: blur(18px);
     color: var(--texto);
-    font-family: "comic sans ms", cursive, sans-serif;
+    font-family: inherit;
 }
 
-.calculadora .pantalla {
+.calculadora input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]).pantalla {
     box-sizing: border-box;
     width: 100%;
     min-height: 5.5rem;
     margin-bottom: 1rem;
     padding: 1rem;
-    border: none;
+    border: 1px solid rgb(168 151 228 / 34%);
     border-radius: 0.6rem;
     background: var(--pantalla);
-    color: #20302b;
+    color: #fff;
     font-size: clamp(1.4rem, 6vw, 2.2rem);
     font-variant-numeric: tabular-nums;
     text-align: right;
@@ -52,8 +63,8 @@
 .calculadora button {
     min-width: 0;
     min-height: 3.75rem;
-    border: 1px solid #bd35f3;
-    border-radius: 0.4rem;
+    border: 1px solid rgb(213 194 255 / 22%);
+    border-radius: 0.6rem;
     background: var(--tecla);
     color: var(--texto);
     font: inherit;
@@ -71,28 +82,29 @@
 }
 
 .calculadora button:focus-visible {
-    outline: 3px solid #f5c16c;
+    outline: 3px solid #f3b4ff;
     outline-offset: 3px;
 }
 
 .calculadora .tecla--operador {
-    background: #67afeb;
-    color: #100b12;
+    border-color: rgb(126 196 255 / 38%);
+    background: rgb(51 112 177 / 55%);
+    color: #f2f8ff;
 }
 
 .calculadora .tecla--operador:hover {
-    background: #438fd0;
+    background: rgb(67 143 210 / 72%);
 }
 
 .calculadora .tecla--igual {
-    border-color: var(--acento);
-    background: var(--acento);
-    color: #102017;
+    border-color: rgb(255 206 248 / 60%);
+    background: linear-gradient(145deg, #d67ebd, #8b70d8);
+    color: #fff;
     font-weight: 700;
 }
 
 .calculadora .tecla--igual:hover {
-    background: #83d9a9;
+    background: linear-gradient(145deg, #e59ad0, #a18ae8);
 }
 
 .calculadora .tecla--doble {

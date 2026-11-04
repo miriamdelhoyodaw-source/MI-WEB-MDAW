@@ -1,48 +1,39 @@
 @import url("estilo.css");
 
+body {
+    background-image:
+        linear-gradient(135deg, rgb(24 13 40 / 58%), rgb(36 14 44 / 40%)),
+        url("../img/juego.jpg");
+    background-position: center, center;
+    background-size: cover;
+}
+
 * {
     box-sizing: border-box;
 }
 
 :root {
     color-scheme: light;
-    --tinta: #21121b;
-    --fondo: #f5c6e0;
-    --papel: #fff7fb;
-    --acento: #d4234f;
-    --menta: #a9f3ca;
-    --linea: #bd35f3;
-}
-
-body {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: var(--fondo);
-    background-image: repeating-linear-gradient(
-        135deg,
-        transparent 0,
-        transparent 22px,
-        rgb(23 61 57 / 3%) 22px,
-        rgb(23 61 57 / 3%) 23px
-    );
-    color: var(--tinta);
-    font-family: "comic sans ms", cursive, sans-serif;
+    --tinta: #fff6fb;
+    --tinta-suave: #e2d5e7;
+    --acento: #ff8296;
+    --panel: rgb(45 27 61 / 94%);
+    --linea: rgb(255 255 255 / 18%);
 }
 
 main {
     width: min(100% - 2rem, 42rem);
     margin: 2rem auto;
     padding: clamp(1.25rem, 5vw, 2.5rem);
-    border: 1px solid var(--linea);
-    border-radius: 0.75rem;
-    background: var(--papel);
-    box-shadow: 0 0.75rem 1.75rem rgb(189 53 243 / 16%);
+    border: 1px solid rgb(255 255 255 / 24%);
+    border-radius: 1rem;
+    background: linear-gradient(145deg, rgb(67 39 79 / 96%), var(--panel));
+    box-shadow: 0 1.25rem 3rem rgb(12 7 24 / 42%);
 }
 
-h1 {
+main h1 {
     margin: 0;
-    color: #d4234f;
+    color: #fff5fb;
     font-family: inherit;
     font-size: 2.5rem;
     line-height: 1.1;
@@ -51,7 +42,7 @@ h1 {
 
 .instrucciones {
     margin: 0.85rem 0 1.75rem;
-    color: #674354;
+    color: var(--tinta-suave);
     text-align: center;
 }
 
@@ -64,10 +55,10 @@ h1 {
 .opciones button {
     min-height: 4.5rem;
     padding: 0.75rem;
-    border: 1px solid var(--linea);
-    border-radius: 0.4rem;
-    background: #67afeb;
-    color: var(--tinta);
+    border: 1px solid rgb(255 255 255 / 24%);
+    border-radius: 0.65rem;
+    background: #714d83;
+    color: #fff;
     font: inherit;
     font-size: 1.1rem;
     font-weight: 700;
@@ -76,29 +67,29 @@ h1 {
 }
 
 .opciones button:nth-child(2) {
-    background: #e7e184;
+    background: #a45b78;
 }
 
 .opciones button:nth-child(3) {
-    background: #f17ea4;
+    background: #c85f70;
 }
 
 .opciones button:hover {
     transform: translateY(-2px);
-    filter: brightness(0.94);
+    filter: brightness(1.12);
 }
 
 .opciones button:focus-visible {
-    outline: 3px solid var(--acento);
+    outline: 3px solid #ffb3c0;
     outline-offset: 3px;
 }
 
 #marcador {
     margin: 1.5rem 0 0.75rem;
     padding: 0.8rem 1rem;
-    border-radius: 0.55rem;
-    background: #df68b7;
-    color: var(--tinta);
+    border-radius: 0.65rem;
+    background: rgb(255 255 255 / 12%);
+    color: #fff5fb;
     font-weight: 700;
     text-align: center;
 }
@@ -110,9 +101,9 @@ h1 {
     margin: 0 0.35rem 0.7rem 0;
     padding: 0.45rem 0.65rem;
     border: 1px solid var(--linea);
-    border-radius: 0.35rem;
-    background: white;
-    color: #674354;
+    border-radius: 0.5rem;
+    background: rgb(255 255 255 / 9%);
+    color: var(--tinta-suave);
     font-size: 0.9rem;
 }
 
@@ -120,12 +111,14 @@ h1 {
     margin-top: 0.75rem;
     padding: 1rem 1.2rem;
     border-left: 4px solid var(--acento);
-    border-radius: 0.25rem;
-    background: #fce6f1;
+    border-radius: 0.4rem;
+    background: rgb(15 10 29 / 28%);
+    color: var(--tinta-suave);
 }
 
 #resultado h2 {
     margin: 0 0 0.8rem;
+    color: #fff5fb;
     font-family: inherit;
     font-size: 1.35rem;
 }
@@ -137,7 +130,7 @@ h1 {
 #mensaje {
     min-height: 1.5rem;
     margin-top: 0.9rem !important;
-    color: #d4234f;
+    color: #ff9dad;
     font-size: 1.15rem;
     font-weight: 700;
 }
