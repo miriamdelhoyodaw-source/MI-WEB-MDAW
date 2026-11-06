@@ -1,5 +1,3 @@
-alert ("Desea abrir la calculadora");
-
 function escribir(valor) {
     let pantalla = document.getElementById("pantalla");
 

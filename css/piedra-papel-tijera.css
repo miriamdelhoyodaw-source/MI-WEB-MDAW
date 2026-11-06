@@ -3,7 +3,7 @@
 body {
     background-image:
         linear-gradient(135deg, rgb(24 13 40 / 58%), rgb(36 14 44 / 40%)),
-        url("../img/juego.jpg");
+        url("../IMG/juego.jpg");
     background-position: center, center;
     background-size: cover;
 }
@@ -53,6 +53,10 @@ main h1 {
 }
 
 .opciones button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
     min-height: 4.5rem;
     padding: 0.75rem;
     border: 1px solid rgb(255 255 255 / 24%);
@@ -64,6 +68,11 @@ main h1 {
     font-weight: 700;
     cursor: pointer;
     transition: transform 140ms ease, background-color 140ms ease;
+}
+
+.opcion-icono {
+    font-size: 1.5rem;
+    line-height: 1;
 }
 
 .opciones button:nth-child(2) {

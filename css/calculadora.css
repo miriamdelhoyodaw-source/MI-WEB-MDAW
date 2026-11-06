@@ -3,7 +3,7 @@
 body {
     background-image:
         linear-gradient(135deg, rgb(13 27 43 / 72%), rgb(20 49 59 / 44%)),
-        url("../img/calculadora2.jpg");
+        url("../IMG/calculadora2.jpg");
     background-position: center, center;
     background-size: cover;
 }

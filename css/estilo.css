@@ -43,6 +43,25 @@ body.pagina-formulario {
     background-size: cover;
 }
 
+body.pagina-horario {
+    background-image:
+        linear-gradient(135deg, rgb(13 27 43 / 70%), rgb(20 49 59 / 48%)),
+        url("../img/horario.jpg");
+    background-position: center, center;
+    background-size: cover;
+}
+
+body.pagina-horario main {
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+}
+
+body.pagina-horario main h1,
+body.pagina-horario main h2 {
+    color: #fff;
+}
+
 header,
 footer {
     color: #f7fafb;
@@ -338,6 +357,72 @@ input[type="submit"]:hover {
 
 .SOST {
     background: #f4e3e3;
+}
+
+body.pagina-horario table {
+    border-color: rgb(255 255 255 / 28%);
+    background: rgb(25 28 51 / 38%);
+}
+
+body.pagina-horario th,
+body.pagina-horario td {
+    border-color: rgb(255 255 255 / 22%);
+}
+
+body.pagina-horario thead {
+    background: rgb(42 32 64 / 88%);
+}
+
+body.pagina-horario tbody tr {
+    background: rgb(28 39 61 / 62%);
+}
+
+body.pagina-horario tbody tr:nth-child(even) {
+    background: rgb(48 38 68 / 66%);
+}
+
+body.pagina-horario tbody tr:hover {
+    filter: brightness(1.18);
+}
+
+body.pagina-horario tbody td {
+    color: #fff;
+}
+
+body.pagina-horario td.PRG {
+    background: rgb(57 91 125 / 88%);
+    color: #fff;
+}
+
+body.pagina-horario td.SINF {
+    background: rgb(46 105 111 / 88%);
+    color: #fff;
+}
+
+body.pagina-horario td.BD {
+    background: rgb(119 67 91 / 88%);
+    color: #fff;
+}
+
+body.pagina-horario td.LM {
+    background: rgb(89 70 119 / 88%);
+    color: #fff;
+}
+
+body.pagina-horario td.DIGI {
+    background: rgb(49 105 91 / 88%);
+    color: #fff;
+}
+
+body.pagina-horario td.PROYT,
+body.pagina-horario td.ENT {
+    background: rgb(126 91 65 / 88%);
+    color: #fff;
+}
+
+body.pagina-horario td.SOST {
+    background: rgb(127 69 83 / 88%);
+    color: #fff;
 }
 
 footer {
