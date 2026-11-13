@@ -1,25 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
-    <link id="tema-claro" rel="stylesheet" href="css/styles.css"/>
-    <link id="tema-oscuro" rel="stylesheet" href="css/oscuro.css" disabled/>
-    <script src="js/cambiarmodo.js"></script>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estilos JVS</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link id="tema-oscuro" rel="stylesheet" href="css/oscuro.css" disabled />
+    <script src="js/cambiarmodo.js" defer></script>
+  </head>
+  <body>
     <header>
-        <h1>Bienvenido a mi web</h1>
+      <h1>Estilos JVS</h1>
+      <h2>Menú:</h2>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="horario.html">Horario</a>
+        <a href="formulario.html">Formulario</a>
+        <a href="calculadora.html">Calculadora</a>
+        <a href="PiedraPapelTijera.html">Juego</a>
+        <a href="EstilosJVS.html" aria-current="page">Estilos JVS</a>
+        <button type="button" class="theme-toggle" data-cambiar-modo aria-pressed="false" onclick="cambiarModo()">Modo oscuro</button>
+      </nav>
     </header>
-    <hr />
     <main>
-        <button onclick="cambiarModo()">Modo oscuro/claro</button>
+      <h2>Contraste claro y oscuro</h2>
+      <p>
+        Creamos el Modo Oscuro para mejorar la accesibilidad y la experiencia del usuario.
+      </p>
+      <p>
+        Usa el botón «Modo oscuro» del menú para cambiar los modos en las páginas de la web.
+      </p>
     </main>
-    <hr />
     <footer>
-        <p>Creada por Miriam del Hoyo</p>
+      <p>CIFP Virgen de Gracia</p>
+      <p>Creada por Miriam del Hoyo</p>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,16 +1,160 @@
-header, footer, main {
-    color : #ffffff;
-    background: #1a1a1a;
-    background-color: #1a1a1a;
-
-}
-
-button {
-    background-color: #787676;
-    color: #ffffff;
+:root {
+    color-scheme: dark;
+    --tinta: #edf4f6;
+    --tinta-suave: #d3e0e4;
+    --papel: #172a38;
+    --acento: #3ca6a0;
+    --acento-oscuro: #66c8bf;
+    --linea: #3b505b;
 }
 
 body {
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background-color: #101b28;
+    color: var(--tinta);
+}
+
+header {
+    border-color: rgb(255 255 255 / 18%);
+    background: rgb(7 17 29 / 92%);
+}
+
+header h2 {
+    color: #b7d2d3;
+}
+
+footer {
+    border-color: rgb(255 255 255 / 18%);
+    background: rgb(7 17 29 / 78%);
+}
+
+nav a,
+nav button {
+    color: #e8f0f2;
+}
+
+nav a:hover,
+nav button:hover {
+    border-color: rgb(102 200 191 / 55%);
+    background: rgb(60 166 160 / 22%);
+    color: #fff;
+}
+
+main {
+    border-color: rgb(150 184 194 / 30%);
+    background: rgb(16 32 45 / 96%);
+    color: var(--tinta);
+    box-shadow: 0 1.25rem 3.5rem rgb(0 0 0 / 35%);
+}
+
+.selector-tema {
+    border-color: #3b6970;
+    border-left-color: #66c8bf;
+    background: #1d3341;
+}
+
+.selector-tema h2 {
+    color: #f2f8f9;
+}
+
+.selector-tema p {
+    color: #d3e0e4;
+}
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+    color: #f2f8f9;
+}
+
+main p,
+main li {
+    color: var(--tinta-suave);
+}
+
+main a,
+main a:hover {
+    color: #76d6cd;
+}
+
+table {
+    border-color: var(--linea);
+    background: var(--papel);
+}
+
+th,
+td {
+    border-color: var(--linea);
+    color: var(--tinta);
+}
+
+thead {
+    background: #20394a;
+}
+
+tbody tr:nth-child(even) {
+    background: #1d3341;
+}
+
+tbody tr:hover {
+    background: #29444f;
+}
+
+fieldset {
+    border-color: var(--linea);
+    background: linear-gradient(145deg, #1d3341, #172a38);
+    color: var(--tinta);
+}
+
+legend,
+label {
+    color: #b9e6df;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]),
+select {
+    border-color: #526a76;
+    background: #10212e;
+    color: #f4f8f9;
+}
+
+input::placeholder {
+    color: #a9bac2;
+}
+
+mark {
+    background: #355b58;
+    color: #f0fffc;
+}
+
+button,
+input[type="submit"] {
+    background: #287c82;
+    color: #fff;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #359892;
+}
+
+nav button.theme-toggle {
+    border-color: rgb(255 255 255 / 20%);
+    background: transparent;
+}
+
+nav button.theme-toggle:hover {
+    background: rgb(60 166 160 / 22%);
+}
+
+body.pagina-horario main {
+    background: transparent;
+    box-shadow: none;
+}
+
+body.pagina-horario main h1,
+body.pagina-horario main h2 {
+    color: #fff;
 }

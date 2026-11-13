@@ -101,21 +101,25 @@ nav {
     gap: 0.45rem;
 }
 
-nav a {
+nav a,
+nav button {
     display: inline-flex;
     align-items: center;
     min-height: 2.55rem;
     padding: 0.5rem 0.95rem;
     border: 1px solid transparent;
     border-radius: 999px;
+    background: transparent;
     color: #e8f0f2;
     font-size: 0.92rem;
     font-weight: 600;
     text-decoration: none;
+    cursor: pointer;
     transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav button:hover {
     border-color: rgb(255 255 255 / 24%);
     background: rgb(255 255 255 / 12%);
     color: #fff;
@@ -140,6 +144,59 @@ main {
     border-radius: 1.15rem;
     background: rgb(255 255 255 / 96%);
     box-shadow: var(--sombra);
+}
+
+.selector-tema {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.1rem 1.3rem;
+    border: 1px solid #c5dfdd;
+    border-left: 5px solid var(--acento);
+    border-radius: 0.85rem;
+    background: #eaf4f3;
+}
+
+.selector-tema h2 {
+    margin: 0;
+    color: #20394a;
+    font-size: 1.15rem;
+}
+
+.selector-tema p {
+    margin: 0.25rem 0 0;
+    color: #405b68;
+}
+
+main .selector-tema button.theme-toggle-home {
+    min-height: 3.25rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--acento-oscuro);
+    box-shadow: 0 0.35rem 0.8rem rgb(29 98 105 / 22%);
+    font-size: 1rem;
+}
+
+main .selector-tema button.theme-toggle-home::before {
+    margin-right: 0.55rem;
+    content: "☾";
+    font-size: 1.2rem;
+}
+
+main .selector-tema button.theme-toggle-home[aria-pressed="true"]::before {
+    content: "☀";
+}
+
+main .selector-tema button.theme-toggle-home:hover {
+    background: #124e55;
+}
+
+@media (max-width: 520px) {
+    .selector-tema button.theme-toggle-home {
+        width: 100%;
+    }
 }
 
 main h1,
@@ -478,4 +535,3 @@ footer a {
         transition-duration: 0.01ms !important;
     }
 }
-
