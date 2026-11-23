@@ -158,3 +158,33 @@ body.pagina-horario main h1,
 body.pagina-horario main h2 {
     color: #fff;
 }
+
+body .contenedor {
+    border-color: rgb(150 184 194 / 30%);
+    background: rgb(16 32 45 / 96%);
+    color: var(--tinta);
+    box-shadow: 0 1.25rem 3.5rem rgb(0 0 0 / 35%);
+}
+
+body .contenedor h1,
+body .contenedor h2 {
+    color: #f2f8f9;
+}
+
+body .contenedor > p,
+body .contenedor section > p,
+body .contenedor label {
+    color: var(--tinta-suave);
+}
+
+body .contenedor input {
+    border-color: #526a76;
+    background: #10212e;
+    color: #f4f8f9;
+}
+
+body .contenedor #resultado {
+    border-color: #3b6970;
+    background: #1d3341;
+    color: #edf4f6;
+}

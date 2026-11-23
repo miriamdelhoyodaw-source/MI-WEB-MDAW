@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    color: #1d2b3a;
+    background-color: #182635;
+    background-image:
+        linear-gradient(135deg, rgb(13 27 43 / 25%), rgb(20 49 59 / 15%)),
+        url("../img/generadoripfondo.avif");
+    background-position: center, center 42%;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+main {
+    display: grid;
+    flex: 1;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+    padding: clamp(1rem, 4vw, 3rem);
+    overflow: visible;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.contenedor {
+    width: min(100%, 600px);
+    padding: clamp(1.25rem, 5vw, 2.5rem);
+    border: 1px solid rgb(255 255 255 / 65%);
+    border-radius: 1.15rem;
+    background: rgb(255 255 255 / 96%);
+    box-shadow: 0 1.25rem 3.5rem rgb(11 25 42 / 18%);
+    text-align: center;
+}
+
+.contenedor h1,
+.contenedor h2 {
+    color: #20394a;
+    line-height: 1.25;
+}
+
+.contenedor h1 {
+    margin-top: 0;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    letter-spacing: -0.025em;
+}
+
+.contenedor > p,
+section > p {
+    color: #596a7b;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+section h2,
+section > p,
+label,
+input,
+#resultado {
+    grid-column: 1 / -1;
+}
+
+section h2 {
+    margin-bottom: 0;
+}
+
+label {
+    margin: 0.25rem 0 -0.5rem;
+    color: #405b68;
+    font-weight: 600;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid #c5d3d9;
+    border-radius: 0.5rem;
+    background: #fff;
+    color: #1d2b3a;
+    font: inherit;
+}
+
+input:focus-visible,
+button:focus-visible {
+    outline: 3px solid #65c5bd;
+    outline-offset: 3px;
+}
+
+button {
+    min-height: 2.75rem;
+    padding: 0.65rem 0.8rem;
+    border: 0;
+    border-radius: 0.55rem;
+    background: #287c82;
+    box-shadow: 0 0.35rem 0.8rem rgb(29 98 105 / 18%);
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 160ms ease;
+}
+
+button:hover {
+    background: #1d6269;
+}
+
+#resultado {
+    margin: 0.5rem 0 0;
+    padding: 1rem;
+    border: 1px solid #c5dfdd;
+    border-radius: 0.75rem;
+    background: #eaf4f3;
+    color: #20394a;
+    font-weight: 600;
+    white-space: pre-line;
+}
+
+footer {
+    padding: 0.75rem 1rem;
+    background: rgb(13 27 43 / 78%);
+    color: #f7fafb;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 520px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    section > button {
+        grid-column: 1 / -1;
+    }
+}

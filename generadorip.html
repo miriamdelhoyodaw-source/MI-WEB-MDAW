@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de IPs</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link id="tema-oscuro" rel="stylesheet" href="css/oscuro.css" disabled>
+    <link rel="stylesheet" href="css/estilogenerador.css">
+    <script src="js/cambiarmodo.js" defer></script>
+    <script src="js/generadorips.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Generador de direcciones IP</h1>
+        <h2>Menú:</h2>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="horario.html">Horario</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="PiedraPapelTijera.html">Juego</a>
+            <a href="EstilosJVS.html">Estilos JVS</a>
+            <a href="generadorip.html">Generador de IPs</a>
+            <button type="button" class="theme-toggle" data-cambiar-modo aria-pressed="false" onclick="cambiarModo()">Modo oscuro</button>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h1>Generador de direcciones IP</h1>
+            <p> Simulador de una red doméstica IPv4.</p>
+
+        <section>
+            <h2>1. Generador de direcciones IP</h2>
+            <P>Red simulada: <strong>192.168.1.0/24</strong></P>
+            <label for="ip">Dirección IP:</label>
+            <input id="ip" type="text" value="192.168.1.10" inputmode="decimal">
+            <label for="mascara">Máscara de subred:</label>
+            <input id="mascara" type="text" value="255.255.255.0" inputmode="decimal">
+            <label for="mascaraSubred">Prefijo de las subredes que se mostrarán:</label>
+            <input id="mascaraSubred" type="text" value="/26" placeholder="/26 o 255.255.255.192">
+
+            <button onclick="mostrarDireccionRed()">Mostrar direccion de red</button>
+            <button onclick="mostrarPuertaEnlace()">Mostrar puerta de enlace</button>
+            <button onclick="generarIP()">Generar IP aleatoria</button>
+            <button onclick="mostrarBroadcast()">Mostrar broadcast</button>
+            <button onclick="mostrarMascara()">Mostrar máscara de subred</button>
+            <button onclick="mostrarSubredes()">Mostrar subredes</button>
+
+            <p id="resultado" role="status" aria-live="polite">El resultado aparecerá aquí.</p>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Generador de IPs. Miriam del Hoyo.</p>
+    </footer>
+</body>
+</html>
